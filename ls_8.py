@@ -58,4 +58,3 @@ else:
 if int(user_number) in default_list: print(f"Число {user_number} есть в списке")
 else: print(f"Число {user_number} отсутствует в списке")
     
-    

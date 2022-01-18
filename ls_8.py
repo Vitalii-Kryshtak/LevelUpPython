@@ -2,7 +2,7 @@ from random import random
 #Home work 8
 
 #Используя инструкцию while разработать программу, которая вычисляет сумму элементов списка.
-integer_list = [int(random() * 100) for i in range(0, 10)]  # Create random list
+integer_list = [int(random() * 100) for i in range(0, 10)]
 sum = 0
 i = 0
 while i < len(integer_list):
@@ -57,3 +57,5 @@ else:
 
 if int(user_number) in default_list: print(f"Число {user_number} есть в списке")
 else: print(f"Число {user_number} отсутствует в списке")
+    
+    

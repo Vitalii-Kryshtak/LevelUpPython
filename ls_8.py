@@ -43,6 +43,7 @@ print("-" * 50)
 default_list = [2, 8, 3, 4, 3, 5, 2, 1, 0, 3, 4, 4, 5, 8, 7, 7, 5]
 user_number = input("Введите число от 0 до 9: ")
 
+
 '''Используя цикл FOR'''
 
 for number in default_list:

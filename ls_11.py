@@ -24,10 +24,7 @@ print(value_d)
 list_1 = ["Украина-Киев", "Россия-Сочи", "Беларусь-Минск", "Япония-Токио", "Германия-Мюнхен"]
 list_2 = ["Киев", "Токио", "Минск"]
 temp_dict = dict(value.split('-') for value in list_1)
-new_dict = dict()
-for key, value in temp_dict.items():
-    if value in list_2:
-        new_dict[key] = value
+new_dict = {key: value for key, value in temp_dict.items() if value in list_2}
 print(new_dict)
 
 #Сгенерировать словарь-шифратор
@@ -36,20 +33,14 @@ keys_list = [chr(key + 32) for key in range(65, 91)]
 values_dict = [chr(key + 32) for key in range(90, 64, -1)]
 encoder_dict = {key: value for key, value in zip(keys_list, values_dict)}
 same_string = 'The standard chunk of Lorem Ipsum used since the is reproduced below for those interested'
+
 secret_string = ''
-
 for character in same_string:
-    if character == ' ':
-        secret_string += ' '
-    else:
-        secret_string += encoder_dict[character.lower()]
-decoder_string = ''
+    secret_string += ' ' if character == ' ' else encoder_dict[character.lower()]
 
+decoder_string = ''
 for character in secret_string:
-    if character == ' ':
-        decoder_string += ' '
-    else:
-        decoder_string += list(encoder_dict.keys())[list(encoder_dict.values()).index(character)]
+    decoder_string += ' ' if character == ' ' else list(encoder_dict.keys())[list(encoder_dict.values()).index(character)]
 
 print(same_string)
 print(secret_string)

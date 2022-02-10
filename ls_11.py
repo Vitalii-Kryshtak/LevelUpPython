@@ -87,4 +87,3 @@ print(pupil_in_school) #164
 dict_num_alpha = {1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e', 6: 'f', 7: 'g', 8: 'h', 9: 'i', 10: 'j', 11: 'k'}
 dict_alpha_num = {value : key for key, value in dict_num_alpha.items()}
 #
-

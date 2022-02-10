@@ -14,16 +14,13 @@ print("Сумма элементов списка равна: ", sum)
 print("-" * 50)
 
 # Из чисел 1+1/2, 1+1/3, 1+1/4 …, напечатать те, которые не меньше a.
-while True:
-    a = float(input("Введите число a (1 < a < 1.5): "))
-    if 1 < a < 1.5:
-        divisor = 2
-        compared_number = 1 + 1 / divisor
-        while a < compared_number:
-            print(compared_number)
-            divisor += 1
-            compared_number = 1 + 1 / divisor
-        break
+a = 1.1
+divisor = 2
+compared_number = 1 + 1 / divisor
+while a < compared_number:
+    print(compared_number)
+    divisor += 1
+    compared_number = 1 + 1 / divisor
 
 print("-" * 50)
 

@@ -28,7 +28,6 @@ new_dict = {key: value for key, value in temp_dict.items() if value in list_2}
 print(new_dict)
 
 #Сгенерировать словарь-шифратор
-from random import randint
 keys_list = [chr(key + 32) for key in range(65, 91)]
 values_dict = [chr(key + 32) for key in range(90, 64, -1)]
 encoder_dict = {key: value for key, value in zip(keys_list, values_dict)}

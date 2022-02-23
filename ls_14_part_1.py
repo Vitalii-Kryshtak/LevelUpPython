@@ -22,3 +22,4 @@ def read_json_file(file_name: str):
     return(new_json_file)
 
 write_json_dump('HW_Result_p1.json', read_json_file('HW.json'))
+

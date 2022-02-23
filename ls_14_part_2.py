@@ -18,6 +18,13 @@ def load_dict(data, json_path):
 
 
 if __name__ == '__main__':
-    n_dict = separate_data(1, 2, 3, 4, 5, name='name', make='make', made='made')
+    n_dict = separate_data(
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+        firstName = 'Tom',
+        lastName = 'Cruise',
+        sex = 'male',
+        profession = 'actor',
+        status = 'not maried'
+    )
     load_dict(n_dict, 'HW_Result_2.json')
 

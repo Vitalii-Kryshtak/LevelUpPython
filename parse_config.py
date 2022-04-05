@@ -67,6 +67,5 @@ if __name__ == "__main__":
         'day_off': 'Monday',
         'phone': 6765723657
     }```
-    write_config_dict_to_file(new_config, path)
-    
+    write_config_dict_to_file(new_config, path)    
 """

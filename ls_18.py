@@ -54,4 +54,5 @@ if __name__ == "__main__":
     query = preparation_query(query)
     result = get_request(API_KEY, URL, query, PER_PAGE)
     download_save_image_threads(result, image_dir, X_RATE_LIMIT, TIME_SLEEP)
+    
 

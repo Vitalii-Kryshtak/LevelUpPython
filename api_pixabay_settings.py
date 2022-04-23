@@ -5,3 +5,4 @@ TIME_SLEEP = 63
 PER_PAGE = 25
 IMAGE_PATH = "image_from_pixabay"
 
+

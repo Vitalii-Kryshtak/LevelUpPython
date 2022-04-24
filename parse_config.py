@@ -6,16 +6,19 @@ def read_file_to_config_dict(path: str) -> dict:
             config[key] = val
         return config
 
+
 def update_config_dict(new_config: dict, config: dict) -> dict:
     for key, val in new_config.items():
         if config.get(key) != None:
             config[key] = val
     return config
 
+
 def write_config_dict_to_file(config: dict, path: str) -> None:
     with open(path, 'w') as file:
         for key, val in config.items():
             file.write(f"{key} = {val}\n")
+
 
 if __name__ == "__main__":
     path = 'my_config.cfg'
@@ -24,7 +27,8 @@ if __name__ == "__main__":
         'font_size': 32,
         'learning': 'Science',
         'day_off': 'Monday',
-        'phone': 6765723657
+        'phone': 6765723657,
+        "age": 100,
     }
     config = read_file_to_config_dict(path)
     config = update_config_dict(new_config, config)

@@ -1,0 +1,12 @@
+1. Linux Servers -> CPU Metric, Memory Metric
+
+2. Agent (run on Linux Server)
+3. Server (Flask - API)
+
+endpoint -> metric -> 192.168.0.1:5000/api/v1/metrics [POST]
+{
+    "name": str,
+    "value": float,
+}
+
+endpoint -> event -> 192.168.0.1:5000/api/v1/events [GET, POST]

@@ -1,0 +1,9 @@
+source-name: test-agent
+interval: 5m
+cpu: false
+memory: true
+wrong: 34
+#NEVER change <host_identificator> manually.
+# It is generated automatically by Agent.
+#It provides uniqness of you Agent Collector.
+host_identificator: 5c8b624d-c6f9-40dc-8366-48792f97deeb

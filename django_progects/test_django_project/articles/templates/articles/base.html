@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "articles/includes/head_links.html" %}
+    <title>{{ title|default:"Default Title" }}</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            {% block content %}
+                <h1>Default Content</h1>
+            {% endblock %}
+        </div>
+    </div>
+</body>
+</html>
